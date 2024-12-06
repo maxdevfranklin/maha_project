@@ -1,0 +1,16 @@
+Extract 4 key pieces of information about how much time has passed, based on the relative or absolute date provided in the variable `target_date_string`. The result must be returned as a JSON object with the following fields:  
+
+1. `year` - The number of years elapsed.  
+2. `month` - The number of months elapsed.  
+3. `day` - The number of days elapsed.  
+4. `hour` - The number of hours elapsed.  
+
+**Rules:**  
+- Convert relative terms like "3 weeks ago" to their equivalent elapsed time. (e.g., "3 weeks ago" → `"day": 21`).  
+- Handle shorthand notations like "3d," "7y," or "12h" as equivalent to "3 days ago," "7 years ago," and "12 hours ago" respectively.  
+- If the input specifies "3 hours ago" or "12h," set `hour` to `3` or `12` and leave other fields as `null`.  
+- If the input uses relative shorthand (e.g., "3d") or full notation ("3 days ago"), treat them the same.  
+- For vague or ambiguous inputs like "sometime next week," or for absolute dates where the current date is unknown, return all fields as `null`.  
+- Ensure conversions between "weeks" and "days" (`"3w"` = `"day": 21`) and handle "minutes" as fractions of hours (`"5m"` = `"hour": 0`, as it is less than an hour).  
+- Always output the result in a valid JSON object with all four keys present (`year`, `month`, `day`, `hour`).  
+- The JSON result must be properly formatted, correctly indented, and easy to read.

@@ -1,0 +1,18 @@
+You should analyze the string that contains date-related information and convert it into an exact `date` format as `yyyy-mm-dd`.  
+After analyzing the string, extract the date information and transform it into the standard format.  
+
+Only strings that clearly specify an **explicit, unambiguous date** should return a value. If the string cannot be resolved into such a value, return an empty string (`""`).  
+
+For example:  
+- 'published on 2024-11-09' → Extract and return `2024-11-09`.  
+- '11/03/2024' → Convert and return `2024-11-03`.  
+- '2 days ago' → CANNOT unambiguously determine a specific date, return an empty string (`""`).  
+- '3 hours ago' → CANNOT unambiguously determine a date, return an empty string (`""`).  
+- 'sometime next week' → Ambiguous, return an empty string (`""`).  
+- 'no date mentioned' → No valid date information, return an empty string (`""`).  
+
+The final output must be either:  
+1. A valid date in the `yyyy-mm-dd` format, OR  
+2. An empty string (`""`) if no valid date can be extracted.  
+
+Do not include any explanations, metadata, or additional data — only the date or an empty string should be provided.  

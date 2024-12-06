@@ -1,0 +1,11 @@
+selenium
+webdriver-manager
+python-dateutil 
+spotipy
+spotify_dl
+pytz
+loguru
+selenium-wire
+blinker==1.7.0
+setuptools
+ffmpeg
