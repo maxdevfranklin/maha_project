@@ -1,2 +1,4 @@
 venv
 .env
+input_handler/general_platform/output
+input_handler/general_platform/log.txt

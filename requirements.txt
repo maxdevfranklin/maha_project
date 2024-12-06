@@ -1,3 +1,4 @@
+openai=0.28
 selenium
 webdriver-manager
 python-dateutil 
