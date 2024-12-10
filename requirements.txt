@@ -11,3 +11,4 @@ blinker==1.7.0
 setuptools
 ffmpeg
 pymongo
+firebase-admin

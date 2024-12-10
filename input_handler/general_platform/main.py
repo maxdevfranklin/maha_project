@@ -11,6 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC  
 from webdriver_manager.chrome import ChromeDriverManager  
 
+from db import insert_article
 from parse_utils import (  
     clean_article_url,  
     get_domain_from_url,
@@ -18,6 +19,8 @@ from parse_utils import (
     parse_post_date,  
     calculate_days_behind,  
 )
+
+
 file = open("program_log.log", "w")  
 logger.configure(handlers=[{  
     "sink": sys.stdout,  
@@ -77,7 +80,6 @@ class Generalscrapper():
                 continue
         
         return article_data
-
 
     def add_article(self, article_list, whole_article_list, article_data):  
         article_title = article_data.get("article_title", "")    
@@ -268,7 +270,7 @@ class Generalscrapper():
         logger.info(f"Finally we have {len(whole_article)} articles")  
 
         behind_article_count = 0  
-        remaining_articles = []  # A new list for valid (not deleted) articles  
+        all_articles = []  # A new list for valid (not deleted) articles  
 
         for article in whole_article:  
             article_age = article["article_age"]  
@@ -277,16 +279,20 @@ class Generalscrapper():
                 behind_article_count += 1  
             else:  
                 logger.info(f'not {article_age}')  
-                remaining_articles.append(article)  # Add valid articles to the new list  
+                all_articles.append(article)  # Add valid articles to the new list  
 
-        logger.info(f"We have deleted {behind_article_count} articles. The total number of articles is {len(remaining_articles)}")
+        logger.info(f"We have deleted {behind_article_count} articles. The total number of articles is {len(all_articles)}")
         driver.quit()
-        return remaining_articles
+        return all_articles
     
+    def add_firebase(self, all_articles):
+        for article_data in all_articles:
+            insert_article(article_data["article_title"], article_data)
+        pass
     def main(self):
         inputs = [  
             # {"url": "https://forum.policiesforpeople.com/c/health/5?ascending=false&order=created", "type": "scroll"},
-            # {"url": "https://thetruthaboutcancer.com/category/cancer-treatments/", "type": "page1"},
+            {"url": "https://thetruthaboutcancer.com/category/cancer-treatments/", "type": "page1"},
             # {"url": "https://vigilantnews.com/post/category/health/", "type": "page1"},
 
             # {"url":"https://forum.policiesforpeople.com/c/food/6?ascending=false&order=created", "type": "scroll"}
@@ -294,8 +300,6 @@ class Generalscrapper():
             # {"url":"https://naturalnews.com/category/health/", "type":"page1"},
 
             {"url": "https://www.foodscience.news/all-posts/", "type": "page1"},
-
-
         ]
         
         exception_dicts = {
