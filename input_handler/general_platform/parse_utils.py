@@ -222,10 +222,6 @@ def parse_post_date(date_string):
     return ""
 
 def calculate_days_behind(article_date):  
-    if article_date == "":  
-        # Handle the case where article_date is empty  
-        return 999999
-
     try:  
         # Parse the "yyyy-mm-dd" date into a datetime object  
         article_date_obj = datetime.strptime(article_date, "%Y-%m-%d")  
