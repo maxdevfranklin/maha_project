@@ -2,6 +2,9 @@ import os
 import json
 import sys
 import requests  
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from urllib.parse import urlparse
 from loguru import logger
@@ -38,6 +41,9 @@ def check_url_status(url):
         return 0
 
 def clean_article_url(article_url, article_image_url, url_domain):
+    logger.info(f"article_url: {article_url}")
+    logger.info(f"article_image_url: {article_image_url}")
+    logger.info(f"url_domain: {url_domain}")
     if article_url.startswith(url_domain):
         article_url = "https://" + article_url
 
@@ -45,11 +51,17 @@ def clean_article_url(article_url, article_image_url, url_domain):
         article_image_url = "https://" + article_image_url
     
     if not article_url.startswith("https"):
-        article_url = "https://" + url_domain + article_url
+        if not article_url.startswith("/"):
+            article_url = "https://" + url_domain + "/" + article_url
+        else:
+            article_url = "https://" + url_domain + article_url
     
     if not article_image_url.startswith("https"):
-        article_image_url = "https://" + url_domain + article_image_url 
-
+        if not article_image_url.startswith("/"):
+            article_image_url = "https://" + url_domain + "/" + article_image_url
+        else:
+            article_image_url = "https://" + url_domain + article_image_url[1:]
+    
     image_extensions = (  
         "jpg", "jpeg", "png", "gif", "bmp", "tiff", "tif", "svg", "webp", "ico",  
         "jfif", "pjpeg", "pjp", "avif", "heif", "heic", "raw", "cr2", "nef", "orf",  
@@ -61,7 +73,8 @@ def clean_article_url(article_url, article_image_url, url_domain):
         # logger.info(f"article_image_url - {article_data['article_image_url']}")
         article_image_url = ""
 
-    replace_list = ["www.example.com", "example.com","website.com"]
+    #  The order should be from bigger to smaller.
+    replace_list = ["www.example.com", "yourwebsite.com", "examplewebsite.com", "example.com","website.com", "platform.com"]
     for item in replace_list:
         if item in article_url:
             article_url = article_url.replace(item, url_domain)
@@ -206,7 +219,14 @@ def parse_post_date(date_string):
     )
 
     age_dict = json.loads(response.choices[0].message.content)
-    # logger.info(f"age_dict - {age_dict}")
+    none_flag = 0
+    for key, value in age_dict.items():
+        if value is not None:
+            none_flag += 1
+            break
+    if none_flag == 0:
+        return ""
+    
     if age_dict:
         year = age_dict.get("year", 0) or 0  
         month = age_dict.get("month", 0) or 0  
