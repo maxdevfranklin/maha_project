@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials  
 from firebase_admin import firestore  
 import torch
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModel, AutoTokenizer, pipeline
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Initialize the app with a service account, granting admin privileges  
@@ -11,7 +11,7 @@ def init_src_db():
     cred = credentials.Certificate('path/from/serviceAccountKey.json')  
     firebase_admin.initialize_app(cred)  
     # Create a Firestore client  
-    db = firestore.client()
+    db = firestore.client() 
     return db
 
 def init_dest_db():
@@ -29,6 +29,7 @@ def write_to_dest_db(dest_db, article_title, text, similarities, keywords, db):
     users_ref_tag = db.collection('tags')
     doc_tag_stream = users_ref_tag.stream()
     tag_dict = {tag.to_dict().get("title"): tag.to_dict().get("category") for tag in doc_tag_stream}
+    summary = summarize_article(text)
 
     for keyword, similarity_score in zip(keywords, similarities):
         if similarity_score > 0.2:
@@ -40,7 +41,8 @@ def write_to_dest_db(dest_db, article_title, text, similarities, keywords, db):
         doc_ref.set({
             'article_title': article_title,
             'tag_scores': tag_scores,
-            'text': text
+            'text': text,
+            'summary': summary
         })
         print(f'Document written with ID: {doc_ref.id}')  
     else:  
@@ -116,15 +118,31 @@ def get_similarity(docs, keywords, db):
         # for keyword, similarity_score in zip(keywords, similarities[0]):  
             # print(f"Keyword: {keyword}, Similarity: {similarity_score:.4f}")
             
-
+def summarize_article(input_text):
+    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    # Add input text truncation
+    max_chunk_length = 1024  # BART's maximum input length
+    
+    # If text is too long, truncate it
+    if len(input_text.split()) > max_chunk_length:
+        input_text = ' '.join(input_text.split()[:max_chunk_length])
+    
+    # Add error handling
+    try:
+        summary = summarizer(input_text, max_length=50, min_length=25, do_sample=False)
+        return summary[0]['summary_text']
+    except Exception as e:
+        print(f"Summarization failed: {str(e)}")
+        return input_text[:200] + "..."  # Return truncated text as fallback
 
 def main():
     db = init_src_db()
     print("Hello, World!")
-    source_db = 'foodscience.news'
+    source_db = 'vigilantnews.com'
     docs = get_article_data(source_db, db)
     keywords = get_tag_data(db)
     get_similarity(docs, keywords, db)
+    # summarize_article()
 
 if __name__ == "__main__":
     main()
