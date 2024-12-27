@@ -1,0 +1,2 @@
+from news_classification.news_topic_text_classifier import news_topic_text_classifier
+model = news_topic_text_classifier()
