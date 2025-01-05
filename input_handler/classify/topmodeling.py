@@ -172,7 +172,7 @@ def main():
     db = init_src_db()
     dest_db = init_dest_db()
     print("Hello, World!")
-    source_db = 'naturalmedicine.news'
+    source_db = 'nopharmfilm.com'
     docs = get_article_data(source_db, db)
     keywords = get_tag_data(dest_db)
     get_similarity(docs, keywords, db, dest_db)
