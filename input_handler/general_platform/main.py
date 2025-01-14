@@ -2,6 +2,7 @@ import time
 import sys
 import json  
 import logging
+import os
 
 from loguru import logger
 from selenium import webdriver  
@@ -58,7 +59,7 @@ class Generalscrapper():
         webdriver_service = Service(ChromeDriverManager().install())
         return webdriver.Chrome(service=webdriver_service, options = chrome_options)
 
-    def get_one_article_data(self, element, url_domain):
+    def get_one_article_data(self, element, url_domain, filename):
         article_data = []
         upper_trying_count = 0
         while True:
@@ -70,6 +71,7 @@ class Generalscrapper():
             if article_data["article_url"] and article_data["article_title"]:
                 # logger.info("Found actual article_information")
                 article_data["article_url"], article_data["article_image_url"] = clean_article_url(article_data["article_url"], article_data["article_image_url"], url_domain)
+                article_data["date"] = filename
                 break
             else:
                 article_data = []
@@ -115,7 +117,7 @@ class Generalscrapper():
         print(f"{article_data}\n")
         return 1
 
-    def get_article_data_from_one_page(self, driver, url, days_behind, whole_article_list, view_type):  
+    def get_article_data_from_one_page(self, driver, url, days_behind, whole_article_list, view_type, filename):  
         days_behind_count = 0
         article_list = []
         if view_type != "scroll":
@@ -175,7 +177,7 @@ class Generalscrapper():
 
                 # Iterate over all elements and process data extraction  
                 for element in elements:  
-                    article_data = self.get_one_article_data(element, url_domain) 
+                    article_data = self.get_one_article_data(element, url_domain, filename) 
                     if article_data: 
                         # logger.info(f"article_data: {article_data}")
                         if self.add_article(article_list, whole_article_list, article_data) == 1:
@@ -198,13 +200,13 @@ class Generalscrapper():
     
         return article_list, days_behind_count
 
-    def get_whole_article_data(self, driver, url, view_type, days_behind, ):
+    def get_whole_article_data(self, driver, url, view_type, filename, days_behind, ):
         base_url = url
         whole_article = []
         page_num = 1
         if view_type == "page1":
             while True:
-                article_list, days_behind_count = self.get_article_data_from_one_page(driver, url, days_behind, whole_article, view_type)
+                article_list, days_behind_count = self.get_article_data_from_one_page(driver, url, days_behind, whole_article, view_type, filename)
                 whole_article.extend(article_list)
                 logger.info(f"We have {len(whole_article)} articles in total")
                 if len(article_list) == 0:
@@ -273,13 +275,13 @@ class Generalscrapper():
         all_articles = []  # A new list for valid (not deleted) articles  
 
         for article in whole_article:  
-            article_age = article["article_age"]  
-            if calculate_days_behind(article_age) > days_behind:  
-                logger.info(article_age)  
-                behind_article_count += 1  
-            else:  
-                logger.info(f'not {article_age}')  
-                all_articles.append(article)  # Add valid articles to the new list  
+            # article_age = article["article_age"]  
+            # if calculate_days_behind(article_age) > days_behind:  
+            #     logger.info(article_age)  
+            #     behind_article_count += 1  
+            # else:  
+            #     logger.info(f'not {article_age}')  
+            all_articles.append(article)  # Add valid articles to the new list  
 
         logger.info(f"We have deleted {behind_article_count} articles. The total number of articles is {len(all_articles)}")
         driver.quit()
@@ -289,26 +291,52 @@ class Generalscrapper():
         for article_data in all_articles:
             insert_article(article_data["article_title"], article_data)
         pass
+
+    def generate_url(self, base_url, page_type):
+        year_month = base_url.rstrip('/')
+        urls = []
+
+        for day in range(1, 32):
+            formatted_day = f"{day:02d}"
+            daily_url = f"{year_month}/{formatted_day}"
+            urls.append({
+                "url": daily_url,
+                "type": page_type
+            })
+        return urls
+    
+    def extract_date(self, url):
+        parts = url.split('/')
+        year = parts[-3]
+        month = parts[-2].zfill(2)
+        day = parts[-1].zfill(2)
+        return f"{year}{month}{day}"
+
     def main(self):
-        inputs = [  
+        inputs = {"url": "https://www.wsj.com/news/archive/2024/12/", "type": "page1"}
             # {"url": "https://forum.policiesforpeople.com/c/health/5?ascending=false&order=created", "type": "scroll"},
-            {"url": "https://thetruthaboutcancer.com/category/cancer-treatments/", "type": "page1"},
+            # {"url": "https://thetruthaboutcancer.com/category/cancer-treatments/", "type": "page1"},
             # {"url": "https://vigilantnews.com/post/category/health/", "type": "page1"},
 
             # {"url":"https://forum.policiesforpeople.com/c/food/6?ascending=false&order=created", "type": "scroll"}
 
             # {"url":"https://naturalnews.com/category/health/", "type":"page1"},
 
-            {"url": "https://www.foodscience.news/all-posts/", "type": "page1"},
-        ]
+            # {"url": "https://www.foodscience.news/all-posts/", "type": "page1"},
+        input_urls = self.generate_url(inputs["url"], inputs["type"])
+        
         
         exception_dicts = {
             "thehighwire": ["videos__list-item format", "xpath", "//li[contains(@class, 'videos__list-item')]"],
             "actforamerica": ["tr format", "xpath", "//tr"]
         }
-        
-        for input in inputs:
+
+        os.makedirs('output', exist_ok=True)
+
+        for input in input_urls:
+            print(input)
             url = input["url"]
+            filename = self.extract_date(url)
             view_type = input["type"]
 
             self.exception_list = []
@@ -319,9 +347,10 @@ class Generalscrapper():
                     break
                     
             driver = self.setup_driver()
-            whole_article_data = self.get_whole_article_data(driver, url, view_type, days_behind=7)
+            whole_article_data = self.get_whole_article_data(driver, url, view_type, filename, days_behind=7,)
             url_domain = get_domain_from_url(url)
-            with open(f"output/{url_domain}.json", 'w', encoding='utf-8') as f:
+            self.add_firebase(whole_article_data)
+            with open(f"output/{filename}.json", 'w', encoding='utf-8') as f:
                 json.dump(whole_article_data, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":

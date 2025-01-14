@@ -8,8 +8,8 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 load_dotenv()
-GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-cred = credentials.Certificate(GOOGLE_APPLICATION_CREDENTIALS)
+# GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+cred = credentials.Certificate('db/serviceAccountKey.json')
 
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
