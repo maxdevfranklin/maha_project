@@ -126,88 +126,103 @@ class Generalscrapper():
         return 1
 
     def get_article_data_from_one_page(self, driver, url, days_behind, whole_article_list, view_type, filename): 
-        logger.info(f"before driver get")
-        days_behind_count = 0
-        article_list = []
-        if view_type != "scroll":
-            driver.get(url)  
-        url_domain = get_domain_from_url(url)
-
-        logger.info(f"Our main domain is - {url_domain}")
-        logger.info(f"Checking structure of {url}")  
-        time.sleep(10)
-        WebDriverWait(driver, 20).until(lambda d: d.execute_script("return document.readyState") == "complete")  
-
-        if not self.exception_list:
-            # Define all the potential structures in a list (XPath and CSS selectors)  
-            structures = [  
-                {"name": "post format", "type": "xpath",   
-                "selector": '//div[contains(@class, "post") and not(.//div[contains(@class, "post")])]'},  
-                {"name": "capitalized post format", "type": "xpath",   
-                "selector": '//div[contains(@class, "Post") and not(.//div[contains(@class, "Post")])]'},  
-                {"name": "article format", "type": "xpath",   
-                "selector": '//article[not(.//article)]'},  
-                {"name": "blog format", "type": "xpath",   
-                "selector": '//div[contains(@class, "blog") and not(.//div[contains(@class, "blog")])]'},  
-                {"name": "topic-list-item", "type": "xpath",
-                "selector": "//tr[contains(@class, 'topic-list-item')]"},
-                {"name": "drudgery-link format", "type": "xpath",   
-                "selector": "//div[@class='drudgery-link']/a"},     
-                {"name": "videostream thumbnail__grid--item format", "type": "xpath",   
-                "selector": "//div[contains(@class, 'videostream thumbnail__grid--item')]"},
-                {"name": "tmb enhanced-atc format", "type": "xpath",   
-                "selector": "//div[contains(@class, 'tmb enhanced-atc')]"},
-                {"name": "page-excerpt format", "type": "css",   
-                "selector": "div.page-excerpt"},  
-                {"name": "status__wrapper format", "type": "css",   
-                "selector": "div.status__wrapper"},  
-                {"name": "transparent format", "type": "css",   
-                "selector": "div.transparent"}, 
-                {"name": "headline link format", "type": "xpath",   
-                "selector": "//li/a[contains(@class, 'headline-link')]"}
-            ]  
-        else:
-            logger.info(f"{url} is is exceptional_case!")
-            structures = [{"name": self.exception_list[0], "type": self.exception_list[1], "selector": self.exception_list[2]}]
+        max_retries = 3
+        retry_count = 0
         
-        # Process each structure type in sequence  
-        for structure in structures:  
-        # try:  
-            # Find elements based on the type (XPath or CSS selector)  
-            if structure["type"] == "xpath":  
-                elements = driver.find_elements(By.XPATH, structure["selector"])  
-            elif structure["type"] == "css":  
-                elements = driver.find_elements(By.CSS_SELECTOR, structure["selector"])  
+        while retry_count < max_retries:
+            try:
+                logger.info(f"Attempt {retry_count + 1} to load page {url}")
+                # if view_type != "scroll":
+                driver.get(url)
+                url_domain = get_domain_from_url(url)
+                time.sleep(2)
+                
+                driver.execute_script("return document.body.scrollHeight")
+                logger.info(f"before driver get")
+                days_behind_count = 0
+                article_list = []
+
+                logger.info(f"Our main domain is - {url_domain}")
+                logger.info(f"Checking structure of {url}")  
+
+                if not self.exception_list:
+                    # Define all the potential structures in a list (XPath and CSS selectors)  
+                    structures = [  
+                        {"name": "post format", "type": "xpath",   
+                        "selector": '//div[contains(@class, "post") and not(.//div[contains(@class, "post")])]'},  
+                        {"name": "capitalized post format", "type": "xpath",   
+                        "selector": '//div[contains(@class, "Post") and not(.//div[contains(@class, "Post")])]'},  
+                        {"name": "article format", "type": "xpath",   
+                        "selector": '//article[not(.//article)]'},  
+                        {"name": "blog format", "type": "xpath",   
+                        "selector": '//div[contains(@class, "blog") and not(.//div[contains(@class, "blog")])]'},  
+                        {"name": "topic-list-item", "type": "xpath",
+                        "selector": "//tr[contains(@class, 'topic-list-item')]"},
+                        {"name": "drudgery-link format", "type": "xpath",   
+                        "selector": "//div[@class='drudgery-link']/a"},     
+                        {"name": "videostream thumbnail__grid--item format", "type": "xpath",   
+                        "selector": "//div[contains(@class, 'videostream thumbnail__grid--item')]"},
+                        {"name": "tmb enhanced-atc format", "type": "xpath",   
+                        "selector": "//div[contains(@class, 'tmb enhanced-atc')]"},
+                        {"name": "page-excerpt format", "type": "css",   
+                        "selector": "div.page-excerpt"},  
+                        {"name": "status__wrapper format", "type": "css",   
+                        "selector": "div.status__wrapper"},  
+                        {"name": "transparent format", "type": "css",   
+                        "selector": "div.transparent"}, 
+                        {"name": "headline link format", "type": "xpath",   
+                        "selector": "//li/a[contains(@class, 'headline-link')]"}
+                    ]  
+                else:
+                    logger.info(f"{url} is is exceptional_case!")
+                    structures = [{"name": self.exception_list[0], "type": self.exception_list[1], "selector": self.exception_list[2]}]
+                
+                # Process each structure type in sequence  
+                for structure in structures:  
+                # try:  
+                    # Find elements based on the type (XPath or CSS selector)  
+                    if structure["type"] == "xpath":  
+                        elements = driver.find_elements(By.XPATH, structure["selector"])  
+                    elif structure["type"] == "css":  
+                        elements = driver.find_elements(By.CSS_SELECTOR, structure["selector"])  
+                    
+                    # If elements are found, process them  
+                    if elements:  
+                        logger.info(f"The structure is {structure['name']}")  
+                        logger.info(f"len(elements): {len(elements)}")  
+
+                        # Iterate over all elements and process data extraction  
+                        for element in elements:  
+                            article_data = self.get_one_article_data(element, url_domain, filename) 
+                            if article_data: 
+                                # logger.info(f"article_data: {article_data}")
+                                if self.add_article(article_list, whole_article_list, article_data) == 1:
+                                    if article_data["article_age"] != "":
+                                        if calculate_days_behind(article_data["article_age"]) > days_behind:
+                                            days_behind_count += 1
+                                            if days_behind_count > 5:
+                                                return article_list, days_behind_count
+                                        else:
+                                            days_behind_count = 0
+                                
+                    # except Exception as e:  
+                    #     logger.error(f"Error processing {structure['name']}: {e}")  
+                    #     continue  
+                
+                if len(article_list) > 0:
+                    logger.info(f"Successfully extract {len(article_list)} data in one page")
+                else:
+                    logger.info(f"No data to extract - {url}")
             
-            # If elements are found, process them  
-            if elements:  
-                logger.info(f"The structure is {structure['name']}")  
-                logger.info(f"len(elements): {len(elements)}")  
-
-                # Iterate over all elements and process data extraction  
-                for element in elements:  
-                    article_data = self.get_one_article_data(element, url_domain, filename) 
-                    if article_data: 
-                        # logger.info(f"article_data: {article_data}")
-                        if self.add_article(article_list, whole_article_list, article_data) == 1:
-                            if article_data["article_age"] != "":
-                                if calculate_days_behind(article_data["article_age"]) > days_behind:
-                                    days_behind_count += 1
-                                    if days_behind_count > 5:
-                                        return article_list, days_behind_count
-                                else:
-                                    days_behind_count = 0
-                        
-            # except Exception as e:  
-            #     logger.error(f"Error processing {structure['name']}: {e}")  
-            #     continue  
-        
-        if len(article_list) > 0:
-            logger.info(f"Successfully extract {len(article_list)} data in one page")
-        else:
-            logger.info(f"No data to extract - {url}")
-    
-        return article_list, days_behind_count
+                return article_list, days_behind_count
+                break
+            except Exception as e:
+                retry_count += 1
+                logger.error(f"Attempt {retry_count} failed: {e}")
+                if retry_count == max_retries:
+                    logger.error("Max retries reached")
+                    return [], 0
+                time.sleep(5)
 
     def get_whole_article_data(self, driver, url, view_type, filename, days_behind, ):
         base_url = url
@@ -215,9 +230,12 @@ class Generalscrapper():
         page_num = 1
         if view_type == "page1":
             while True:
+                url = f"{base_url}?page={page_num}/"
+                driver.delete_all_cookies()
+                time.sleep(2)
                 article_list, days_behind_count = self.get_article_data_from_one_page(driver, url, days_behind, whole_article, view_type, filename)
                 whole_article.extend(article_list)
-                logger.info(f"We have {len(whole_article)} articles in total")
+                logger.info(f"We have {len(whole_article)} articles in total================================================")
                 if len(article_list) == 0:
                     logger.info("No data on this page.")
                     break
@@ -225,58 +243,11 @@ class Generalscrapper():
                     logger.info("More than 5 articles exceeds days limit. Stop searching and choice is set as page\n")
                     break
                 page_num += 1
-                url = f"{base_url}/page/{page_num}/"
+                logger.info(url)
             # except Exception as e:
             #     logger.error(f"An error occurred in page type 1: {e}")
             
-        if view_type == "page2":
-            while True:
-                article_list, days_behind_count = self.get_article_data_from_one_page(driver, url, days_behind, whole_article, view_type)
-                whole_article.extend(article_list)
-                logger.info(f"We have {len(whole_article)} articles in total")
-                if len(article_list) == 0:
-                    logger.info("No data on this page.")
-                    break
-                if days_behind_count > 5:
-                    logger.info("More than 5 articles exceeds days limit. Stop searching and choice is set as page\n")
-                    break
-                page_num += 1
-                url = f"{base_url}?page={page_num}"
-            # except Exception as e:
-            #     logger.error(f"An error occurred in page type 1: {e}")
-            
-        if view_type == "scroll":
-            try:  
-                # Get the initial page height  
-                last_height = driver.execute_script("return document.body.scrollHeight")  
-                url = base_url
-                driver.get(url)
-                choice = "scroll"
-                while True:    
-                    time.sleep(10)  # Adjust this value based on the site's load time  
-                    
-                    # Extract articles from the current page  
-                    article_list, days_behind_count = self.get_article_data_from_one_page(driver, url, days_behind, whole_article, choice)  
-                    whole_article.extend(article_list)
-                    logger.info(f"We have {len(whole_article)} articles in total")
-                    if days_behind_count > 5:
-                        logger.info("More than 5 articles exceeds days limit. Stop searching and choice is set as scroll\n")
-                        break
-                    
-                    new_articles = []  
-                    for article in article_list:  
-                        if article['article_title'] not in [a['article_title'] for a in whole_article]:  
-                            new_articles.append(article)  
-                    
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  
-                    time.sleep(10)  
-                    new_height = driver.execute_script("return document.body.scrollHeight")  
-                    if new_height == last_height:  
-                        logger.info("We have no new data. Choice is set as scroll\n")
-                        break  
-                    last_height = new_height  
-            except Exception as e:  
-                logger.error(f"An error occurred: {e} while parsing in scroll mode.")  
+        
         
         logger.info(f"Finally we have {len(whole_article)} articles")  
 
@@ -294,6 +265,7 @@ class Generalscrapper():
 
         logger.info(f"We have deleted {behind_article_count} articles. The total number of articles is {len(all_articles)}")
         driver.quit()
+        print("driver quit")
         return all_articles
     
     def add_firebase(self, all_articles):
@@ -305,7 +277,7 @@ class Generalscrapper():
         year_month = base_url.rstrip('/')
         urls = []
 
-        for day in range(20, 32):
+        for day in range(1, 32):
             formatted_day = f"{day:02d}"
             daily_url = f"{year_month}/{formatted_day}"
             urls.append({
@@ -322,7 +294,7 @@ class Generalscrapper():
         return f"{year}{month}{day}"
 
     def main(self):
-        inputs = {"url": "https://www.wsj.com/news/archive/2024/12/", "type": "page1"}
+        inputs = {"url": "https://www.wsj.com/news/archive/2024/10/", "type": "page1"}
             # {"url": "https://forum.policiesforpeople.com/c/health/5?ascending=false&order=created", "type": "scroll"},
             # {"url": "https://thetruthaboutcancer.com/category/cancer-treatments/", "type": "page1"},
             # {"url": "https://vigilantnews.com/post/category/health/", "type": "page1"},
@@ -358,9 +330,14 @@ class Generalscrapper():
             driver = self.setup_driver()
             whole_article_data = self.get_whole_article_data(driver, url, view_type, filename, days_behind=7,)
             url_domain = get_domain_from_url(url)
-            self.add_firebase(whole_article_data)
+            # self.add_firebase(whole_article_data)
+            record_number = []
+            record_number.append(f"{filename}_{len(whole_article_data)}")
+            print("file save")
             with open(f"output/{filename}.json", 'w', encoding='utf-8') as f:
                 json.dump(whole_article_data, f, ensure_ascii=False, indent=4)
+            with open(f"output/record/number.json", 'w', encoding='utf-8') as f:
+                json.dump(record_number, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     general_scrapper = Generalscrapper()

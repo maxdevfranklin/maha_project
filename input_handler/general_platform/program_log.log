@@ -1,1 +1,351 @@
-[33m2025-01-15 01:11:25[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mbefore driver get[0m
+[33m2025-01-15 13:55:27[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mAttempt 1 to load page https://www.wsj.com/news/archive/2024/10/01?page=1/[0m
+[33m2025-01-15 13:55:51[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mbefore driver get[0m
+[33m2025-01-15 13:55:51[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mOur main domain is - wsj.com[0m
+[33m2025-01-15 13:55:51[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mChecking structure of https://www.wsj.com/news/archive/2024/10/01?page=1/[0m
+[33m2025-01-15 13:55:52[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mThe structure is article format[0m
+[33m2025-01-15 13:55:52[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mlen(elements): 50[0m
+[33m2025-01-15 13:55:54[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/politics/elections/five-vp-debate-moments-that-mattered-most-22cf244d[0m
+[33m2025-01-15 13:55:54[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-84408042?width=100&height=67[0m
+[33m2025-01-15 13:55:54[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:55:55[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:55:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/tech/oracle-to-invest-6-5-billion-in-ai-and-cloud-infrastructure-in-malaysia-a691b07a[0m
+[33m2025-01-15 13:55:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-674836?width=100&height=67[0m
+[33m2025-01-15 13:55:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:55:57[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/iran-ballistic-missile-attack-israel-8c418294[0m
+[33m2025-01-15 13:56:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-02431712?width=100&height=67[0m
+[33m2025-01-15 13:56:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:01[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/lifestyle/travel/southwest-airlines-assigned-seats-fees-76283939[0m
+[33m2025-01-15 13:56:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-87394756?width=100&height=67[0m
+[33m2025-01-15 13:56:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:03[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/real-estate/luxury-homes/luxury-real-estate-climate-disasters-insurance-costs-03c502b9[0m
+[33m2025-01-15 13:56:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-32402320?width=100&height=67[0m
+[33m2025-01-15 13:56:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:07[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:12[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/politics/policy/port-strike-puts-pressure-on-harris-biden-ahead-of-election-6696e137[0m
+[33m2025-01-15 13:56:12[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-05160012?width=100&height=67[0m
+[33m2025-01-15 13:56:12[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:13[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:16[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/lifestyle/relationships/married-voting-different-candidates-election-66883d3f[0m
+[33m2025-01-15 13:56:16[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-83553188?width=100&height=67[0m
+[33m2025-01-15 13:56:16[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:17[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:19[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/articles/amtraks-new-marketing-strategy-its-not-a-train-its-a-hotel-on-wheels-aef63302[0m
+[33m2025-01-15 13:56:19[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-59879921?width=100&height=67[0m
+[33m2025-01-15 13:56:19[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:20[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/us-news/climate-environment/helene-hurricane-western-north-carolina-eastern-tennessee-inland-why-7b00acc4[0m
+[33m2025-01-15 13:56:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-98774271?width=100&height=67[0m
+[33m2025-01-15 13:56:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:23[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:25[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/us-news/climate-environment/asheville-hurricane-helene-economy-north-carolina-ee312fae[0m
+[33m2025-01-15 13:56:25[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-88227068?width=100&height=67[0m
+[33m2025-01-15 13:56:25[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:26[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/what-is-happening-in-lebanon-israel-begins-ground-operation-against-hezbollah-a8928b7f[0m
+[33m2025-01-15 13:56:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-24158116?width=100&height=67[0m
+[33m2025-01-15 13:56:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:29[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/israel-sends-troops-into-lebanon-escalating-fight-against-hezbollah-1dbcee03[0m
+[33m2025-01-15 13:56:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-02888780?width=100&height=67[0m
+[33m2025-01-15 13:56:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:31[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:33[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/earnings/nike-sales-nke-q1-earnings-report-2025-b142ac6d[0m
+[33m2025-01-15 13:56:33[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-12548381?width=100&height=67[0m
+[33m2025-01-15 13:56:33[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:34[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:35[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/international-longshoremens-association-strike-ports-labor-union-president-biden-a586363d[0m
+[33m2025-01-15 13:56:35[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-72963893?width=100&height=67[0m
+[33m2025-01-15 13:56:35[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:36[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/california-gavin-newsom-homelessness-accountability-state-agencies-30a7849c[0m
+[33m2025-01-15 13:56:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-97780684?width=100&height=67[0m
+[33m2025-01-15 13:56:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:38[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:40[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/autos/auto-sales-idling-as-prices-remain-high-c4674e67[0m
+[33m2025-01-15 13:56:40[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-976118?width=100&height=67[0m
+[33m2025-01-15 13:56:40[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:41[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/iran-missile-attack-israel-benjamin-netanyahu-hezbollah-biden-lloyd-austin-c33889c5[0m
+[33m2025-01-15 13:56:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-28170324?width=100&height=67[0m
+[33m2025-01-15 13:56:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:43[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/japan-prime-minster-shigeru-ishiba-economy-3c19aaa9[0m
+[33m2025-01-15 13:56:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-52438902?width=100&height=67[0m
+[33m2025-01-15 13:56:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:46[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/whats-to-blame-for-political-violence-election-2024-e3ce538b[0m
+[33m2025-01-15 13:56:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-39933957?width=100&height=67[0m
+[33m2025-01-15 13:56:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:48[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/deals/apollos-marc-rowan-says-raising-money-is-no-longer-the-hard-part-finding-deals-is-cadb6549[0m
+[33m2025-01-15 13:56:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-68087276?width=100&height=67[0m
+[33m2025-01-15 13:56:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:51[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/arts-culture/books/crisis-averted-review-what-the-doctors-ordered-813c40dd[0m
+[33m2025-01-15 13:56:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-08058362?width=100&height=67[0m
+[33m2025-01-15 13:56:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:53[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:54[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/harriss-apprenticeship-plan-is-a-giveaway-to-unions-83d877d1[0m
+[33m2025-01-15 13:56:55[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-83866296?width=100&amp;height=67[0m
+[33m2025-01-15 13:56:55[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:56[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:56:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/a-way-forward-on-immigration-policy-reforms-politics-7c9511c2[0m
+[33m2025-01-15 13:56:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-36812377?width=100&height=67[0m
+[33m2025-01-15 13:56:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:56:58[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/trump-russia-collusion-and-world-war-iii-intelligence-agency-mistake-deterrence-7a8ff320[0m
+[33m2025-01-15 13:57:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-66618524?width=100&height=67[0m
+[33m2025-01-15 13:57:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:00[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/the-link-between-russia-and-iran-national-security-alliances-biden-administration-f40e0132[0m
+[33m2025-01-15 13:57:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-24216460?width=100&height=67[0m
+[33m2025-01-15 13:57:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:03[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:05[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/pete-rose-is-dead-now-reinstate-him-baseball-player-sports-betting-62ea02ff[0m
+[33m2025-01-15 13:57:05[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-96249615?width=100&height=67[0m
+[33m2025-01-15 13:57:05[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:06[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:08[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/currencies/asian-currencies-mixed-may-weaken-on-dimmer-prospects-of-fed-rate-cuts-2c4c0479[0m
+[33m2025-01-15 13:57:08[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: [0m
+[33m2025-01-15 13:57:08[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:09[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:10[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/artificial-intelligence-may-bring-back-three-mile-island-microsoft-data-center-energy-c125eef3[0m
+[33m2025-01-15 13:57:10[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-48838793?width=100&height=67[0m
+[33m2025-01-15 13:57:10[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:11[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/lpl-financial-terminates-ceo-dan-arnold-035c22c1[0m
+[33m2025-01-15 13:57:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-38831337?width=100&height=67[0m
+[33m2025-01-15 13:57:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:13[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/us-news/climate-environment/hurricane-helene-north-carolina-crisis-search-and-rescue-9518ef43[0m
+[33m2025-01-15 13:57:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-56514721?width=100&amp;height=67[0m
+[33m2025-01-15 13:57:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:16[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/arts-culture/music/leon-by-leon-bridges-review-a-search-for-soul-1eb64457[0m
+[33m2025-01-15 13:57:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-86708526?width=100&amp;height=67[0m
+[33m2025-01-15 13:57:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:18[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/arts-culture/television/returning-to-babylon-review-secrets-of-the-dead-mosul-iraq-pbs-59a5c4df[0m
+[33m2025-01-15 13:57:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-63768669?width=100&height=67[0m
+[33m2025-01-15 13:57:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:23[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:24[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/investing/health-care-roundup-market-talk-f27562d7[0m
+[33m2025-01-15 13:57:24[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-03740245?width=100&height=67[0m
+[33m2025-01-15 13:57:24[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:25[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:27[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/energy-oil/energy-utilities-roundup-market-talk-3b6e82e8[0m
+[33m2025-01-15 13:57:27[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-82002592?width=100&height=67[0m
+[33m2025-01-15 13:57:27[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:28[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:29[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/health/healthcare/cvs-considering-a-break-up-will-find-its-hard-to-do-0e336c65[0m
+[33m2025-01-15 13:57:29[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-68097178?width=100&height=67[0m
+[33m2025-01-15 13:57:29[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:30[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/autos/auto-transport-roundup-market-talk-8d06745d[0m
+[33m2025-01-15 13:57:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-26215505?width=100&amp;height=67[0m
+[33m2025-01-15 13:57:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:33[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/stocks/stocks-fall-oil-prices-rise-after-iran-launches-missiles-at-israel-e04f4327[0m
+[33m2025-01-15 13:57:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-04866821?width=100&height=67[0m
+[33m2025-01-15 13:57:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:35[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/not-too-late-to-stop-irans-nuclear-program-95ceb8ae[0m
+[33m2025-01-15 13:57:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-83297233?width=100&height=67[0m
+[33m2025-01-15 13:57:37[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:38[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/trump-tariffs-trade-deficit-china-economics-5a9dd216[0m
+[33m2025-01-15 13:57:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-42430690?width=100&height=67[0m
+[33m2025-01-15 13:57:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:40[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:41[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/which-trump-biden-harris-falsehood-will-have-the-longer-life-76b9b661[0m
+[33m2025-01-15 13:57:41[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-17662749?width=100&height=67[0m
+[33m2025-01-15 13:57:41[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:42[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:44[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/no-one-but-israel-will-take-on-the-terrorists-of-lebanon-f10c6daf[0m
+[33m2025-01-15 13:57:44[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-52997865?width=100&height=67[0m
+[33m2025-01-15 13:57:44[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:45[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:46[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/taxing-a-traditional-ira-distribution-c7ee0718[0m
+[33m2025-01-15 13:57:46[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-71928229?width=100&height=67[0m
+[33m2025-01-15 13:57:46[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:47[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:49[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/housing-your-rent-will-not-be-controlled-82e562d4[0m
+[33m2025-01-15 13:57:49[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-74223842?width=100&height=67[0m
+[33m2025-01-15 13:57:49[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:50[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:51[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/stocks/nikkei-may-open-higher-focus-on-ishiba-770ba335[0m
+[33m2025-01-15 13:57:51[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-923143?width=100&height=67[0m
+[33m2025-01-15 13:57:51[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:52[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/americas/mexicos-first-female-president-has-a-big-problem-her-mentors-legacy-8f0a8517[0m
+[33m2025-01-15 13:57:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-36980080?width=100&height=67[0m
+[33m2025-01-15 13:57:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:54[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:55[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/articles/temp-job-wednesday-crossword-october-2-5cb1b755[0m
+[33m2025-01-15 13:57:55[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-225974?width=100&height=67[0m
+[33m2025-01-15 13:57:55[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:56[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:57:58[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/politics/elections/walz-vance-vp-debate-what-to-know-7145fd20[0m
+[33m2025-01-15 13:57:58[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-27975290?width=100&height=67[0m
+[33m2025-01-15 13:57:58[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:57:59[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:58:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/arts-culture/television/salems-lot-review-blunting-a-stephen-king-story-on-max-8174d706[0m
+[33m2025-01-15 13:58:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-33863744?width=100&height=67[0m
+[33m2025-01-15 13:58:00[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:58:04[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:58:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/finance/commodities-futures/gold-edges-higher-supported-by-safe-haven-demand-middle-east-tensions-e96f3696[0m
+[33m2025-01-15 13:58:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: [0m
+[33m2025-01-15 13:58:06[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:58:07[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:58:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/hospitality/he-stole-22-million-to-fund-his-gambling-addiction-now-hes-suing-fanduel-bc014cb7[0m
+[33m2025-01-15 13:58:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-483206?width=100&amp;height=67[0m
+[33m2025-01-15 13:58:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 13:58:10[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mNew article[0m
+[33m2025-01-15 13:58:12[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mSuccessfully extract 50 data in one page[0m
+[33m2025-01-15 13:58:12[0m | [1mINFO[0m | [36mmain[0m:[36mget_whole_article_data[0m | [33mWe have 50 articles in total================================================[0m
+[33m2025-01-15 13:58:12[0m | [1mINFO[0m | [36mmain[0m:[36mget_whole_article_data[0m | [33mhttps://www.wsj.com/news/archive/2024/10/01?page=1/[0m
+[33m2025-01-15 13:58:16[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mAttempt 1 to load page https://www.wsj.com/news/archive/2024/10/01?page=2/[0m
+[33m2025-01-15 14:00:16[0m | [31m[1mERROR[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mAttempt 1 failed: HTTPConnectionPool(host='localhost', port=60385): Read timed out. (read timeout=120)[0m
+[33m2025-01-15 14:00:21[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mAttempt 2 to load page https://www.wsj.com/news/archive/2024/10/01?page=2/[0m
+[33m2025-01-15 14:00:54[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mbefore driver get[0m
+[33m2025-01-15 14:00:54[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mOur main domain is - wsj.com[0m
+[33m2025-01-15 14:00:54[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mChecking structure of https://www.wsj.com/news/archive/2024/10/01?page=2/[0m
+[33m2025-01-15 14:00:54[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mThe structure is article format[0m
+[33m2025-01-15 14:00:54[0m | [1mINFO[0m | [36mmain[0m:[36mget_article_data_from_one_page[0m | [33mlen(elements): 50[0m
+[33m2025-01-15 14:00:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/politics/elections/five-vp-debate-moments-that-mattered-most-22cf244d[0m
+[33m2025-01-15 14:00:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-84408042?width=100&height=67[0m
+[33m2025-01-15 14:00:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:00:56[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:00:56[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mDuplicated article
+[0m
+[33m2025-01-15 14:00:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/tech/oracle-to-invest-6-5-billion-in-ai-and-cloud-infrastructure-in-malaysia-a691b07a[0m
+[33m2025-01-15 14:00:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-674836?width=100&height=67[0m
+[33m2025-01-15 14:00:57[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:00:57[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:00:57[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mDuplicated article
+[0m
+[33m2025-01-15 14:00:59[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/iran-ballistic-missile-attack-israel-8c418294[0m
+[33m2025-01-15 14:00:59[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-02431712?width=100&height=67[0m
+[33m2025-01-15 14:00:59[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:00:59[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:00[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/lifestyle/travel/southwest-airlines-assigned-seats-fees-76283939[0m
+[33m2025-01-15 14:01:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-87394756?width=100&height=67[0m
+[33m2025-01-15 14:01:02[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:02[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:03[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:04[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/real-estate/luxury-homes/luxury-real-estate-climate-disasters-insurance-costs-03c502b9[0m
+[33m2025-01-15 14:01:04[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-32402320?width=100&height=67[0m
+[33m2025-01-15 14:01:04[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:04[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:05[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:07[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/politics/policy/port-strike-puts-pressure-on-harris-biden-ahead-of-election-6696e137[0m
+[33m2025-01-15 14:01:07[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-05160012?width=100&height=67[0m
+[33m2025-01-15 14:01:07[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:07[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:08[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/lifestyle/relationships/married-voting-different-candidates-election-66883d3f[0m
+[33m2025-01-15 14:01:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-83553188?width=100&height=67[0m
+[33m2025-01-15 14:01:09[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:09[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:11[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/articles/amtraks-new-marketing-strategy-its-not-a-train-its-a-hotel-on-wheels-aef63302[0m
+[33m2025-01-15 14:01:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-59879921?width=100&amp;height=67[0m
+[33m2025-01-15 14:01:13[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:13[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:14[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/us-news/climate-environment/helene-hurricane-western-north-carolina-eastern-tennessee-inland-why-7b00acc4[0m
+[33m2025-01-15 14:01:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-98774271?width=100&height=67[0m
+[33m2025-01-15 14:01:15[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:15[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:16[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/us-news/climate-environment/asheville-hurricane-helene-economy-north-carolina-ee312fae[0m
+[33m2025-01-15 14:01:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-88227068?width=100&height=67[0m
+[33m2025-01-15 14:01:17[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:17[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:18[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:20[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/what-is-happening-in-lebanon-israel-begins-ground-operation-against-hezbollah-a8928b7f[0m
+[33m2025-01-15 14:01:20[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-24158116?width=100&height=67[0m
+[33m2025-01-15 14:01:20[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:20[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:21[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/world/middle-east/israel-sends-troops-into-lebanon-escalating-fight-against-hezbollah-1dbcee03[0m
+[33m2025-01-15 14:01:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-02888780?width=100&height=67[0m
+[33m2025-01-15 14:01:22[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:22[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:23[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:26[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/earnings/nike-sales-nke-q1-earnings-report-2025-b142ac6d[0m
+[33m2025-01-15 14:01:26[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-12548381?width=100&height=67[0m
+[33m2025-01-15 14:01:26[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:26[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:27[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/international-longshoremens-association-strike-ports-labor-union-president-biden-a586363d[0m
+[33m2025-01-15 14:01:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-72963893?width=100&height=67[0m
+[33m2025-01-15 14:01:28[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:28[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:29[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/california-gavin-newsom-homelessness-accountability-state-agencies-30a7849c[0m
+[33m2025-01-15 14:01:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-97780684?width=100&height=67[0m
+[33m2025-01-15 14:01:30[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:30[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:30[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mDuplicated article
+[0m
+[33m2025-01-15 14:01:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/autos/auto-sales-idling-as-prices-remain-high-c4674e67[0m
+[33m2025-01-15 14:01:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-976118?width=100&height=67[0m
+[33m2025-01-15 14:01:32[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:32[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:33[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/iran-missile-attack-israel-benjamin-netanyahu-hezbollah-biden-lloyd-austin-c33889c5[0m
+[33m2025-01-15 14:01:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-28170324?width=100&height=67[0m
+[33m2025-01-15 14:01:34[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:34[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:35[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:36[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/japan-prime-minster-shigeru-ishiba-economy-3c19aaa9[0m
+[33m2025-01-15 14:01:36[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-52438902?width=100&height=67[0m
+[33m2025-01-15 14:01:36[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:36[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:37[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/whats-to-blame-for-political-violence-election-2024-e3ce538b[0m
+[33m2025-01-15 14:01:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-39933957?width=100&height=67[0m
+[33m2025-01-15 14:01:39[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:39[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:40[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/business/deals/apollos-marc-rowan-says-raising-money-is-no-longer-the-hard-part-finding-deals-is-cadb6549[0m
+[33m2025-01-15 14:01:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://images.wsj.net/im-68087276?width=100&height=67[0m
+[33m2025-01-15 14:01:42[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:42[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:43[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/arts-culture/books/crisis-averted-review-what-the-doctors-ordered-813c40dd[0m
+[33m2025-01-15 14:01:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-08058362?width=100&height=67[0m
+[33m2025-01-15 14:01:45[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:45[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:46[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/harriss-apprenticeship-plan-is-a-giveaway-to-unions-83d877d1[0m
+[33m2025-01-15 14:01:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-83866296?width=100&height=67[0m
+[33m2025-01-15 14:01:47[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:47[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:48[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/a-way-forward-on-immigration-policy-reforms-politics-7c9511c2[0m
+[33m2025-01-15 14:01:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-36812377?width=100&height=67[0m
+[33m2025-01-15 14:01:50[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:50[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:51[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/trump-russia-collusion-and-world-war-iii-intelligence-agency-mistake-deterrence-7a8ff320[0m
+[33m2025-01-15 14:01:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-66618524?width=100&height=67[0m
+[33m2025-01-15 14:01:52[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:52[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:52[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mDuplicated article
+[0m
+[33m2025-01-15 14:01:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/the-link-between-russia-and-iran-national-security-alliances-biden-administration-f40e0132[0m
+[33m2025-01-15 14:01:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-24216460?width=100&height=67[0m
+[33m2025-01-15 14:01:53[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:53[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:54[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
+[33m2025-01-15 14:01:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_url: https://www.wsj.com/opinion/pete-rose-is-dead-now-reinstate-him-baseball-player-sports-betting-62ea02ff[0m
+[33m2025-01-15 14:01:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33marticle_image_url: https://opinion-images.wsj.net/im-96249615?width=100&height=67[0m
+[33m2025-01-15 14:01:56[0m | [1mINFO[0m | [36mparse_utils[0m:[36mclean_article_url[0m | [33murl_domain: wsj.com[0m
+[33m2025-01-15 14:01:56[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mWe found duplicating one. Checking which will be added.[0m
+[33m2025-01-15 14:01:57[0m | [1mINFO[0m | [36mmain[0m:[36madd_article[0m | [33mReplaced previous article[0m
