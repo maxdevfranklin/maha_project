@@ -1,0 +1,46 @@
+{
+    "status": 200,
+    "numResults": 5,
+    "articles": [
+        {
+            "url": "https://www.wsj.com/recipes/maple-sticky-toffee-pudding-94bf76bf",
+            "authorsByline": "WSJ Recipes",
+            "articleId": "76959fcfb3654ca09d7c8dc865c5964b",
+            "title": "Maple Sticky Toffee Pudding - WSJ Recipes",
+            "description": "At Montreal\u2019s Restaurant L\u2019Orignal, a date-sweetened cake becomes a sumptuous pudding with the addition of a hot, buttery toffee sauce.",
+            "pubDate": "2025-01-12T21:04:11+00:00"
+        },
+        {
+            "url": "https://www.wsj.com/podcasts/whats-news/how-the-us-job-market-could-change-in-2025/7B8AB33B-F5D2-47C0-85F6-211A04133380",
+            "authorsByline": "",
+            "articleId": "f0569c8668cf492fa9f3f31263e55854",
+            "title": "How the U.S. Job Market Could Change in 2025  - What\u2019s News - WSJ Podcasts",
+            "description": "What are the macro trends moving the U.",
+            "pubDate": "2025-01-12T11:00:00+00:00"
+        },
+        {
+            "url": "https://www.wsj.com/us-news/rfk-jr-falconry-animals-trump-administration-hhs-d6c1463d",
+            "authorsByline": "Kristina Peterson",
+            "articleId": "379aef22f31f46efb340b8e848974e4b",
+            "title": "RFK Jr: America\u2019s Falconer-in-Chief",
+            "description": "Exotic animals from a leopard tortoise to a sea lion have moved in and out of 70-year-old\u2019s life, but falcons never left.",
+            "pubDate": "2025-01-12T10:30:00+00:00"
+        },
+        {
+            "url": "https://www.wsj.com/world/middle-east/syria-alawite-community-assad-regime-8c11d6e1",
+            "authorsByline": "Omar Abdel-Baqui / Photographs by Gabriel Ferneini for WSJ",
+            "articleId": "0f860232c1fd49c88d8d703cbc7cfd28",
+            "title": "Syria\u2019s Alawites, Sect of the Assads, Fear for Their Future",
+            "description": "They say disparate violent incidents in the past two months\u2014including alleged extrajudicial killings and the destruction of a religious shrine\u2014are beginning to resemble a pattern of anti-Alawite acts.",
+            "pubDate": "2025-01-12T04:00:00+00:00"
+        },
+        {
+            "url": "https://www.wsj.com/us-news/los-angeles-wildfires-social-media-rumors-44d224b4",
+            "authorsByline": "Scott Calvert and Joshua Chaffin",
+            "articleId": "4302a9e84a33467f9ba8c7fb9f0dd573",
+            "title": "Fighting Fires\u2014and the Rumor Mill\u2014as L.A. Burns",
+            "description": "\u2018The worst I\u2019ve ever seen.",
+            "pubDate": "2025-01-12T02:00:00+00:00"
+        }
+    ]
+}

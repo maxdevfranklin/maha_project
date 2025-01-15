@@ -1,0 +1,831 @@
+{
+  "status": 200,
+  "numResults": 5,
+  "articles": [
+    {
+      "url": "https://www.wsj.com/recipes/maple-sticky-toffee-pudding-94bf76bf",
+      "authorsByline": "WSJ Recipes",
+      "articleId": "76959fcfb3654ca09d7c8dc865c5964b",
+      "clusterId": "f110309c5c0c4abf9c879f4b0afa678c",
+      "source": {
+        "domain": "wsj.com",
+        "paywall": true,
+        "location": {
+          "country": "us",
+          "state": "NY",
+          "city": "New York",
+          "coordinates": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+          }
+        }
+      },
+      "imageUrl": "",
+      "country": "us",
+      "language": "en",
+      "pubDate": "2025-01-12T21:04:11+00:00",
+      "addDate": "2025-01-12T21:26:36.209636+00:00",
+      "refreshDate": "2025-01-12T21:26:36.209637+00:00",
+      "score": 1.0,
+      "title": "Maple Sticky Toffee Pudding - WSJ Recipes",
+      "description": "At Montreal’s Restaurant L’Orignal, a date-sweetened cake becomes a sumptuous pudding with the addition of a hot, buttery toffee sauce. Pastry chef and co-owner Monika Terlecki was amenable to adapting the dessert—a favorite of the producers of the series “The Sticky” when they were shooting in the city—with a generous slug of maple syrup, which contributes a welcome complexity.",
+      "content": "At Montreal’s Restaurant L’Orignal, a date-sweetened cake becomes a sumptuous pudding with the addition of a hot, buttery toffee sauce. Pastry chef and co-owner Monika Terlecki was amenable to adaptin... [412 symbols]",
+      "medium": "Article",
+      "links": [
+        "https://www.wsj.com/arts-culture/food-cooking/the-sticky-how-canadas-famous-maple-syrup-heist-became-a-delicious-dark-comedy-288981e3?mod=recipe-link"
+      ],
+      "labels": [
+        {
+          "name": "Non-news"
+        }
+      ],
+      "matchedAuthors": [],
+      "claim": "",
+      "verdict": "",
+      "keywords": [
+        {
+          "name": "Maple Sticky Toffee Pudding",
+          "weight": 0.15779199
+        },
+        {
+          "name": "The Sticky",
+          "weight": 0.11795978
+        },
+        {
+          "name": "maple syrup",
+          "weight": 0.11741666
+        },
+        {
+          "name": "Monika Terlecki",
+          "weight": 0.10739715
+        },
+        {
+          "name": "Pastry chef and co-owner Monika Terlecki",
+          "weight": 0.098690845
+        },
+        {
+          "name": "Restaurant L’Orignal",
+          "weight": 0.09835588
+        },
+        {
+          "name": "WSJ Recipes",
+          "weight": 0.09416254
+        },
+        {
+          "name": "WSJ",
+          "weight": 0.06785251
+        },
+        {
+          "name": "a sumptuous pudding",
+          "weight": 0.065871574
+        },
+        {
+          "name": "Montreal",
+          "weight": 0.06283483
+        }
+      ],
+      "topics": [
+        {
+          "name": "Food & Drink"
+        },
+        {
+          "name": "Recipes"
+        }
+      ],
+      "categories": [
+        {
+          "name": "Entertainment"
+        }
+      ],
+      "entities": [
+        {
+          "data": "WSJ",
+          "type": "ORG",
+          "mentions": 1
+        },
+        {
+          "data": "Restaurant L’Orignal",
+          "type": "ORG",
+          "mentions": 1
+        },
+        {
+          "data": "Montreal",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "Monika Terlecki",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "The Sticky",
+          "type": "WORK_OF_ART",
+          "mentions": 1
+        }
+      ],
+      "companies": [],
+      "sentiment": {
+        "positive": 0.3893544,
+        "negative": 0.077420816,
+        "neutral": 0.53322476
+      },
+      "summary": "At Montreal's Restaurant L'Orignal, pastry chef Monika Terlecki has adapted a date-sweetened cake into a pudding with the addition of a hot, buttery toffee sauce. The dessert is a favorite of the producers of the series “The Sticky” when they were shooting in the city. The maple syrup adds a welcome complexity to the dessert.",
+      "translation": "",
+      "translatedTitle": "",
+      "translatedDescription": "",
+      "translatedSummary": "",
+      "locations": [
+        {
+          "country": "ca",
+          "state": "QC",
+          "county": "Urban agglomeration of Montreal",
+          "city": "Montreal"
+        }
+      ],
+      "reprint": false,
+      "reprintGroupId": "afafaa909ac8448eb405923cb75e0cd7",
+      "places": [],
+      "people": []
+    },
+    {
+      "url": "https://www.wsj.com/podcasts/whats-news/how-the-us-job-market-could-change-in-2025/7B8AB33B-F5D2-47C0-85F6-211A04133380",
+      "authorsByline": "",
+      "articleId": "f0569c8668cf492fa9f3f31263e55854",
+      "clusterId": "5d9a4ea36733478385552104786674ef",
+      "source": {
+        "domain": "wsj.com",
+        "paywall": true,
+        "location": {
+          "country": "us",
+          "state": "NY",
+          "city": "New York",
+          "coordinates": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+          }
+        }
+      },
+      "imageUrl": "https://images.wsj.net/im-915199?width=1280",
+      "country": "us",
+      "language": "en",
+      "pubDate": "2025-01-12T11:00:00+00:00",
+      "addDate": "2025-01-12T11:13:00.854367+00:00",
+      "refreshDate": "2025-01-12T11:13:00.854368+00:00",
+      "score": 1.0,
+      "title": "How the U.S. Job Market Could Change in 2025  - What’s News - WSJ Podcasts",
+      "description": "What are the macro trends moving the U.S. labor market and how might that translate into your ability to find a new job? From the incoming Trump administration’s tariff and immigration plans to the adoption of AI, WSJ workplace and employment reporter Lauren Weber and logistics and supply chain reporter Paul Berger discuss what’s driving changes in the labor market, and how companies are planning for the future. Luke Vargas hosts. Further Reading The American Worker Is Becoming More Productive America’s Role Reversal: Working-Class Blacks Make Gains While Whites Fall Back What Trump’s Immigration Plans Mean for American Job Growth Help Wanted: U.S. Factories Seek Workers for the Nearshoring Boom",
+      "content": "WSJ's Take On the Week WSJ's Take On the Week brings you the insights and analysis you need to get a leg up on the world of money and investing. We cut through the noise and dive into markets, the eco... [3316 symbols]",
+      "medium": "Article",
+      "links": [
+        "https://www.wsj.com/podcasts/as-we-work?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/opinion-potomac-watch?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/the-journal?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/wsj-the-future-of-everything?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/minute-briefing?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/your-money-matters?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/tech-news-briefing?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/secrets-of-wealthy-women?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/bad-bets?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/opinion-free-expression?mod=podcasts_tile",
+        "https://www.wsj.com/podcasts/take-on-the-week?mod=podcasts_tile"
+      ],
+      "labels": [
+        {
+          "name": "Non-news"
+        },
+        {
+          "name": "Opinion"
+        },
+        {
+          "name": "Roundup"
+        }
+      ],
+      "matchedAuthors": [],
+      "claim": "",
+      "verdict": "",
+      "keywords": [
+        {
+          "name": "Wall Street",
+          "weight": 0.097964376
+        },
+        {
+          "name": "business news",
+          "weight": 0.07787552
+        },
+        {
+          "name": "breaking tech news",
+          "weight": 0.07401995
+        },
+        {
+          "name": "Journal",
+          "weight": 0.07130267
+        },
+        {
+          "name": "his Wall Street Journal Opinion column",
+          "weight": 0.06717755
+        },
+        {
+          "name": "WSJ reporters",
+          "weight": 0.06490914
+        },
+        {
+          "name": "The Wall Street Journal",
+          "weight": 0.064408325
+        },
+        {
+          "name": "the Wall Street Journal",
+          "weight": 0.064408325
+        },
+        {
+          "name": "WSJ Podcasts",
+          "weight": 0.063995644
+        },
+        {
+          "name": "economic news",
+          "weight": 0.062743925
+        }
+      ],
+      "topics": [
+        {
+          "name": "Podcasts"
+        }
+      ],
+      "categories": [
+        {
+          "name": "Finance"
+        }
+      ],
+      "entities": [
+        {
+          "data": "U.S.",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "Washington",
+          "type": "GPE",
+          "mentions": 2
+        },
+        {
+          "data": "WSJ",
+          "type": "ORG",
+          "mentions": 6
+        },
+        {
+          "data": "The Wall Street Journal's",
+          "type": "ORG",
+          "mentions": 7
+        },
+        {
+          "data": "Spotify",
+          "type": "ORG",
+          "mentions": 1
+        },
+        {
+          "data": "Take On the Week",
+          "type": "WORK_OF_ART",
+          "mentions": 3
+        },
+        {
+          "data": "Your Money Briefing",
+          "type": "WORK_OF_ART",
+          "mentions": 1
+        },
+        {
+          "data": "Free Expression",
+          "type": "WORK_OF_ART",
+          "mentions": 1
+        },
+        {
+          "data": "As We Work",
+          "type": "WORK_OF_ART",
+          "mentions": 2
+        },
+        {
+          "data": "Telis Demos",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Gunjan Banerji",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "J.R. Whalen",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Kate Linebaugh",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Ryan Knutson",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Jessica Mendoza",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Paul Gigot",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Kim Strassel",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Bill McGurn",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Kyle Peterson",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Gerry Baker",
+          "type": "PERSON",
+          "mentions": 2
+        }
+      ],
+      "companies": [],
+      "sentiment": {
+        "positive": 0.3049697,
+        "negative": 0.12548056,
+        "neutral": 0.56954974
+      },
+      "summary": "WSJ's Take On the Week podcast provides insights and analysis into the world of money and investing. Listen to The Wall Street Journal's Telis Demos and Gunjan Banerji in conversation about hot topics in markets and finance. They will bring actionable insights to investors and business leaders. Your Money Briefing provides a personal-finance and career checklist, with experts breaking down complicated money questions. Tech News Briefing will provide breaking tech news and exclusive interviews with industry insiders. The podcast is hosted by Kate Linebaugh and Ryan Knutson, with Jessica Mendoza. The Future of Everything offers a view of the future trends that will shape our lives. Work smarter and advance in your career with the As We Work podcast, which provides practical advice for improving your work life.",
+      "translation": "",
+      "translatedTitle": "",
+      "translatedDescription": "",
+      "translatedSummary": "",
+      "locations": [],
+      "reprint": false,
+      "reprintGroupId": "ff2f0b6f1b6a46bda09b609d87696331",
+      "places": [],
+      "people": [
+        {
+          "wikidataId": "Q3130679",
+          "name": "Jessica Mendoza"
+        },
+        {
+          "wikidataId": "Q6409856",
+          "name": "Kimberley Strassel"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/us-news/rfk-jr-falconry-animals-trump-administration-hhs-d6c1463d",
+      "authorsByline": "Kristina Peterson",
+      "articleId": "379aef22f31f46efb340b8e848974e4b",
+      "clusterId": "c0f67f3bf22a41d29a45d5808c8b8b3e",
+      "source": {
+        "domain": "wsj.com",
+        "paywall": true,
+        "location": {
+          "country": "us",
+          "state": "NY",
+          "city": "New York",
+          "coordinates": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+          }
+        }
+      },
+      "imageUrl": "",
+      "country": "us",
+      "language": "en",
+      "pubDate": "2025-01-12T10:30:00+00:00",
+      "addDate": "2025-01-12T10:41:20.407471+00:00",
+      "refreshDate": "2025-01-12T10:41:20.407472+00:00",
+      "score": 1.0,
+      "title": "RFK Jr: America’s Falconer-in-Chief",
+      "description": "Exotic animals from a leopard tortoise to a sea lion have moved in and out of 70-year-old’s life, but falcons never left",
+      "content": "WASHINGTON—When Robert F. Kennedy, Jr. gathered his 2024 presidential campaign team for a meeting, he elbowed his neighbor to point at the window: several falcons were flying through the air.\n\nLong be... [463 symbols]",
+      "medium": "Article",
+      "links": [],
+      "labels": [],
+      "matchedAuthors": [
+        {
+          "id": "782e9dafe42146b587751dcc5fd52869",
+          "name": "Kristina Peterson"
+        }
+      ],
+      "claim": "",
+      "verdict": "",
+      "keywords": [
+        {
+          "name": "presidential candidate",
+          "weight": 0.1183827
+        },
+        {
+          "name": "several falcons",
+          "weight": 0.10184899
+        },
+        {
+          "name": "Kennedy",
+          "weight": 0.101348855
+        },
+        {
+          "name": "wild birds",
+          "weight": 0.09917847
+        },
+        {
+          "name": "RFK Jr",
+          "weight": 0.097974874
+        },
+        {
+          "name": "prey",
+          "weight": 0.08453295
+        },
+        {
+          "name": "Robert F. Kennedy, Jr.",
+          "weight": 0.07852641
+        },
+        {
+          "name": "America",
+          "weight": 0.07802289
+        },
+        {
+          "name": "Trump",
+          "weight": 0.07529116
+        },
+        {
+          "name": "Chief",
+          "weight": 0.068639554
+        }
+      ],
+      "topics": [],
+      "categories": [
+        {
+          "name": "Politics"
+        }
+      ],
+      "entities": [
+        {
+          "data": "RFK Jr",
+          "type": "PERSON",
+          "mentions": 2
+        },
+        {
+          "data": "Trump",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Kennedy",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "America",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "WASHINGTON",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "the Health and Human Services Department",
+          "type": "ORG",
+          "mentions": 1
+        }
+      ],
+      "companies": [],
+      "sentiment": {
+        "positive": 0.13196877,
+        "negative": 0.495377,
+        "neutral": 0.37265426
+      },
+      "summary": "Robert F. Kennedy, Jr., a former presidential candidate and president-elect Trump's pick to lead the Health and Human Services Department, has long been fascinated by falconry, the sport that trains wild birds of prey to hunt with their handlers. Kennedy's passion for falconing began when he was meeting with his team for a meeting and he noticed several falcons flying through the air.",
+      "translation": "",
+      "translatedTitle": "",
+      "translatedDescription": "",
+      "translatedSummary": "",
+      "locations": [],
+      "reprint": false,
+      "reprintGroupId": "01127da249da427fa227e6b9519f8453",
+      "places": [],
+      "people": [
+        {
+          "wikidataId": "Q1352872",
+          "name": "Robert F. Kennedy Jr."
+        }
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/world/middle-east/syria-alawite-community-assad-regime-8c11d6e1",
+      "authorsByline": "Omar Abdel-Baqui / Photographs by Gabriel Ferneini for WSJ",
+      "articleId": "0f860232c1fd49c88d8d703cbc7cfd28",
+      "clusterId": "df7152b2f3294d80a2c6b20ca290d462",
+      "source": {
+        "domain": "wsj.com",
+        "paywall": true,
+        "location": {
+          "country": "us",
+          "state": "NY",
+          "city": "New York",
+          "coordinates": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+          }
+        }
+      },
+      "imageUrl": "https://images.wsj.net/im-61217959/social",
+      "country": "us",
+      "language": "en",
+      "pubDate": "2025-01-12T04:00:00+00:00",
+      "addDate": "2025-01-12T04:12:25.479234+00:00",
+      "refreshDate": "2025-01-12T04:12:25.479235+00:00",
+      "score": 1.0,
+      "title": "Syria’s Alawites, Sect of the Assads, Fear for Their Future",
+      "description": "They say disparate violent incidents in the past two months—including alleged extrajudicial killings and the destruction of a religious shrine—are beginning to resemble a pattern of anti-Alawite acts.",
+      "content": "KHIRBET AL-MA’ZAH, Syria—When Sunni Islamist rebels toppled Bashar al-Assad’s regime, many residents of this rural village were elated by the end of a half-century of oppression even though they belon... [546 symbols]",
+      "medium": "Article",
+      "links": [
+        "https://www.wsj.com/world/middle-east/arab-states-race-turkey-for-influence-in-new-syria-cb33670b?mod=article_inline"
+      ],
+      "labels": [],
+      "matchedAuthors": [
+        {
+          "id": null,
+          "name": "Gabriel Ferneini"
+        },
+        {
+          "id": null,
+          "name": "Omar Abdel"
+        }
+      ],
+      "claim": "",
+      "verdict": "",
+      "keywords": [
+        {
+          "name": "anti-Alawite slurs",
+          "weight": 0.10204725
+        },
+        {
+          "name": "many residents",
+          "weight": 0.100167856
+        },
+        {
+          "name": "anti-Alawite",
+          "weight": 0.09992769
+        },
+        {
+          "name": "Syria",
+          "weight": 0.09240383
+        },
+        {
+          "name": "Sunni Islamist rebels",
+          "weight": 0.09099621
+        },
+        {
+          "name": "Sect",
+          "weight": 0.08939715
+        },
+        {
+          "name": "members",
+          "weight": 0.08066356
+        },
+        {
+          "name": "Sunni Islamist",
+          "weight": 0.07676703
+        },
+        {
+          "name": "Masked men",
+          "weight": 0.07445721
+        },
+        {
+          "name": "days",
+          "weight": 0.0720555
+        }
+      ],
+      "topics": [],
+      "categories": [
+        {
+          "name": "World"
+        }
+      ],
+      "entities": [
+        {
+          "data": "Syria",
+          "type": "GPE",
+          "mentions": 3
+        },
+        {
+          "data": "KHIRBET AL-MA’ZAH",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "Alawites",
+          "type": "NORP",
+          "mentions": 3
+        },
+        {
+          "data": "Assads",
+          "type": "NORP",
+          "mentions": 1
+        },
+        {
+          "data": "Sunni Islamist",
+          "type": "NORP",
+          "mentions": 1
+        },
+        {
+          "data": "Muslim",
+          "type": "NORP",
+          "mentions": 1
+        },
+        {
+          "data": "Bashar al-Assad’s",
+          "type": "PERSON",
+          "mentions": 1
+        }
+      ],
+      "companies": [],
+      "sentiment": {
+        "positive": 0.057291873,
+        "negative": 0.7539358,
+        "neutral": 0.18877232
+      },
+      "summary": "The Alawite minority, members of the same Muslim sect as Bashar al-Assad, have been terrorized by masked men in a rural village in Syria since the overthrow of the regime. Masked men have terrorized the village, beating people, looting homes, and using anti-Alawite slurs. Some community members have been missing for days and feared dead. The fear for their future has been replaced by fear.",
+      "translation": "",
+      "translatedTitle": "",
+      "translatedDescription": "",
+      "translatedSummary": "",
+      "locations": [],
+      "reprint": false,
+      "reprintGroupId": "e6f616c1c47d492f9f5ab73937a0f2b5",
+      "places": [],
+      "people": [
+        {
+          "wikidataId": "Q44329",
+          "name": "Bashar al-Assad"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/us-news/los-angeles-wildfires-social-media-rumors-44d224b4",
+      "authorsByline": "Scott Calvert and Joshua Chaffin",
+      "articleId": "4302a9e84a33467f9ba8c7fb9f0dd573",
+      "clusterId": "f71acc411da3400eb87240de80cd06fd",
+      "source": {
+        "domain": "wsj.com",
+        "paywall": true,
+        "location": {
+          "country": "us",
+          "state": "NY",
+          "city": "New York",
+          "coordinates": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+          }
+        }
+      },
+      "imageUrl": "https://images.wsj.net/im-83425397/social",
+      "country": "us",
+      "language": "en",
+      "pubDate": "2025-01-12T02:00:00+00:00",
+      "addDate": "2025-01-12T02:06:14.999995+00:00",
+      "refreshDate": "2025-01-12T02:06:14.999997+00:00",
+      "score": 1.0,
+      "title": "Fighting Fires—and the Rumor Mill—as L.A. Burns",
+      "description": "‘The worst I’ve ever seen.’ Skyrocketing misinformation is forcing public officials to adopt a new playbook when tragedies hit their communities",
+      "content": "Los Angeles Fire Department Capt. Erik Scott has one of the most intense jobs in the nation right now: trying to distribute accurate public information during a historically destructive urban fire in ... [516 symbols]",
+      "medium": "Article",
+      "links": [],
+      "labels": [],
+      "matchedAuthors": [
+        {
+          "id": "97fa81ba39bb42a5bb38eacedaaac0a6",
+          "name": "Scott Calvert"
+        },
+        {
+          "id": "a78b95cea9af4fa584b893930b4a1fe6",
+          "name": "Joshua Chaffin"
+        }
+      ],
+      "claim": "",
+      "verdict": "",
+      "keywords": [
+        {
+          "name": "Los Angeles Fire Department Capt. Erik Scott",
+          "weight": 0.12115465
+        },
+        {
+          "name": "L.A. firefighters",
+          "weight": 0.10622101
+        },
+        {
+          "name": "accurate public information",
+          "weight": 0.105415955
+        },
+        {
+          "name": "Los Angeles Fire Department",
+          "weight": 0.1039759
+        },
+        {
+          "name": "Alex Jones",
+          "weight": 0.094641395
+        },
+        {
+          "name": "Erik Scott",
+          "weight": 0.09411509
+        },
+        {
+          "name": "Fighting Fires",
+          "weight": 0.09289241
+        },
+        {
+          "name": "L.A.",
+          "weight": 0.08880381
+        },
+        {
+          "name": "officials",
+          "weight": 0.07306051
+        },
+        {
+          "name": "buckets",
+          "weight": 0.07202822
+        }
+      ],
+      "topics": [],
+      "categories": [
+        {
+          "name": "Politics"
+        }
+      ],
+      "entities": [
+        {
+          "data": "Fighting Fires",
+          "type": "WORK_OF_ART",
+          "mentions": 1
+        },
+        {
+          "data": "L.A.",
+          "type": "GPE",
+          "mentions": 2
+        },
+        {
+          "data": "America",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "Ukraine",
+          "type": "GPE",
+          "mentions": 1
+        },
+        {
+          "data": "Los Angeles Fire Department",
+          "type": "ORG",
+          "mentions": 1
+        },
+        {
+          "data": "X",
+          "type": "ORG",
+          "mentions": 1
+        },
+        {
+          "data": "Erik Scott",
+          "type": "PERSON",
+          "mentions": 1
+        },
+        {
+          "data": "Alex Jones",
+          "type": "PERSON",
+          "mentions": 1
+        }
+      ],
+      "companies": [],
+      "sentiment": {
+        "positive": 0.12799788,
+        "negative": 0.62026,
+        "neutral": 0.25174212
+      },
+      "summary": "Los Angeles Fire Department Capt. Erik Scott is dealing with a historically destructive urban fire and a new conspiracy theorist, Alex Jones, who claimed that L.A. firefighters were using ladies’ handbags as buckets due to donations from Ukraine. Jones' post has been viewed 29 million times and has attracted 29 million followers.",
+      "translation": "",
+      "translatedTitle": "",
+      "translatedDescription": "",
+      "translatedSummary": "",
+      "locations": [],
+      "reprint": false,
+      "reprintGroupId": "5b2046eec570475cbd2eccb21ef1803e",
+      "places": [],
+      "people": []
+    }
+  ]
+}

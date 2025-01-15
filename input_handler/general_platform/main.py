@@ -55,9 +55,17 @@ class Generalscrapper():
         chrome_options.add_argument('--window-size=1920,1080')  # Set browser window size (needed for responsive web pages)  
         chrome_options.add_argument('--start-maximized')  # Ensure full content is visible  
         chrome_options.add_argument('--disable-extensions')  # Disable extensions for stability  
+        chrome_options.add_argument('--page-load-timeout=300')
+        chrome_options.add_argument('--script-timeout=300')
         
         webdriver_service = Service(ChromeDriverManager().install())
-        return webdriver.Chrome(service=webdriver_service, options = chrome_options)
+        driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+    
+        # Set explicit timeouts
+        driver.set_page_load_timeout(300)
+        driver.set_script_timeout(300)
+        
+        return driver
 
     def get_one_article_data(self, element, url_domain, filename):
         article_data = []
@@ -117,7 +125,8 @@ class Generalscrapper():
         print(f"{article_data}\n")
         return 1
 
-    def get_article_data_from_one_page(self, driver, url, days_behind, whole_article_list, view_type, filename):  
+    def get_article_data_from_one_page(self, driver, url, days_behind, whole_article_list, view_type, filename): 
+        logger.info(f"before driver get")
         days_behind_count = 0
         article_list = []
         if view_type != "scroll":
@@ -296,7 +305,7 @@ class Generalscrapper():
         year_month = base_url.rstrip('/')
         urls = []
 
-        for day in range(1, 32):
+        for day in range(20, 32):
             formatted_day = f"{day:02d}"
             daily_url = f"{year_month}/{formatted_day}"
             urls.append({
